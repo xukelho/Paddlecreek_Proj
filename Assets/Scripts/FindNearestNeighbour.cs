@@ -20,7 +20,7 @@ public class FindNearestNeighbour : MonoBehaviour
 
     void OnEnable()
     {
-        _walkerController.MarkAsSolo();
+        _walkerController?.MarkAsSolo();
         StartCoroutine(FindClosestWalkerForEachWalker());
     }
 
